@@ -145,7 +145,7 @@
             "humidity": 0,
             "continentalness": -0.25
           },
-          "biome": "incendium:quartz_flats"
+          "biome": "minecraft:the_nether"
         },
         {
           "parameters": {
