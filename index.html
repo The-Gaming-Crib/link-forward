@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4108550917737764"
-     crossorigin="anonymous"></script>
-    
     <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.location.href = "https://thegamingcrib.net/games";
+    <script>
+        (function() {
+            // Get the current hostname (e.g., "1.example.com")
+            const currentHost = window.location.hostname;
+
+            // Define your redirection map
+            const redirectMap = {
+                "games.thegamingcrib.net": "https://thegamingcrib.net/games",
+                "2.example.com": "https://blabla2.example.com",
+                "3.example.com": "https://another-destination.com"
+            };
+
+            // Check if the current host exists in our map
+            if (redirectMap[currentHost]) {
+                window.location.href = redirectMap[currentHost];
+            } else {
+                // Optional: Fallback if the domain doesn't match anything
+                document.body.innerHTML = "<h1>Domain not recognized.</h1>";
+            }
+        })();
     </script>
 </head>
 <body>
-    <p>Redirecting you to another site...</p>
+    <p>If you are not redirected, <a href="https://example.com">click here</a>.</p>
 </body>
 </html>
